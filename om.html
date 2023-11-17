@@ -3,8 +3,18 @@
 <html>
 	<head>
 		<title>Love</title>
-		<meta om="for love foundation">	
+		<meta om="for love foundation">
 		<script>
+			var currentPage = 1;
+		window.onscroll = function() {
+			var scrollPos = window.scrollY || window.scrollTop || 					document.getElementsByTagName("html")[0].scrollTop;
+			
+			if (scrollPos > (currentPage-1)*document.getElementById('1').clientHeight + 377) { 
+				console.log('next page now');
+				currentPage++;
+				document.getElementById(''+currentPage).scrollIntoView({behavior: 'smooth'});
+			}
+		};
 		</script>
 
 		<style>
