@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Love</title>
+		<meta om="for love foundation">
+		<script>
+			var currentPage = 1;
+		window.onscroll = function() {
+			var scrollPos = window.scrollY || window.scrollTop || 					document.getElementsByTagName("html")[0].scrollTop;
+			
+			if (scrollPos > (currentPage-1)*document.getElementById('1').clientHeight + 377) { 
+				console.log('next page now');
+				currentPage++;
+				document.getElementById(''+currentPage).scrollIntoView({behavior: 'smooth'});
+			}
+		};
+		</script>
+
+		<style>
+			.page {
+				height:100vh;	margin-left:auto;margin-right:auto;display:block;
+			}
+		</style>	
+	</head>
+
+	<body>
+		<img id="1" class="page" src="1.JPG">
+		<img id="2" class="page" src="2.JPG">
+		<img id="3" class="page" src="3.JPG">
+		<img id="4" class="page" src="4.JPG">
+		<img id="5" class="page" src="5.JPG">
+		<img id="6" class="page" src="6.JPG">
+		<img id="7" class="page" src="7.JPG">
+		<img id="8" class="page" src="8.JPG">
+		<img id="9" class="page" src="9.JPG">
+		<img id="10" class="page" src="10.JPG">
+		<img id="11" class="page" src="11.JPG">
+		<img id="12" class="page" src="12.JPG">
+		<img id="13" class="page" src="13.JPG">
+		<img id="14" class="page" src="14.JPG">
+		<img id="15" class="page" src="15.JPG">
+		<img id="16" class="page" src="16.JPG">
+		<img id="17" class="page" src="17.JPG">
+		<img id="18" class="page" src="18.JPG">
+		<img id="19" class="page" src="19.JPG">
+		<img id="20" class="page" src="20.JPG">
+		<img id="21" class="page" src="21.JPG">
+		<img id="22" class="page" src="22.JPG">
+		<img id="23" class="page" src="23.JPG">
+		<img id="24" class="page" src="24.JPG">
+		<img id="25" class="page" src="25.JPG">
+		<img id="26" class="page" src="26.JPG">
+		<img id="27" class="page" src="27.JPG">
+		<img id="28" class="page" src="28.JPG">
+		<img id="29" class="page" src="IMG_33.JPG">
+
+	</body>
+</html>
